@@ -37,18 +37,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 postData(Ename.getText().toString(),
-                        Integer.parseInt(EregNo.getText().toString()),
-                        Integer.parseInt(Ephone.getText().toString()),
-                        Integer.parseInt(Eyear.getText().toString()),
+                        EregNo.getText().toString(),
+                        Ephone.getText().toString(),
+                        Eyear.getText().toString(),
                         Ebranch.getText().toString(),
                         Esize.getText().toString(),
-                        Integer.parseInt(EamtPaid.getText().toString()));
+                        EamtPaid.getText().toString());
             }
         });
 
     }
 
-    private void postData(String name, int regNo, int phone, int year, String branch, String size, int amtPaid) {
+    private void postData(String name, String regNo, String phone, String year, String branch, String size, String amtPaid) {
         Retrofit retrofit=new Retrofit.Builder()
                 .baseUrl("https://script.google.com/macros/s/AKfycbx6o3vKtKolYv7S5lScWMSIMwLMr2eJ_6bPh0b9E_Vn8NBLy_5LYFsiMwwzIUfimgy2cA/")
                 .addConverterFactory(GsonConverterFactory.create())

@@ -3,14 +3,14 @@ package com.example.data_insertion;
 public class Model {
     private String fxn;
     private String name;
-    private int regNo;
-    private int phone;
-    private int year;
+    private String regNo;
+    private String phone;
+    private String year;
     private String branch;
     private String size;
-    private int amtPaid;
+    private String amtPaid;
 
-    public Model(String fxn, String name, int regNo, int phone, int year, String branch, String size, int amtPaid) {
+    public Model(String fxn, String name, String regNo, String phone, String year, String branch, String size, String amtPaid) {
         this.fxn = fxn;
         this.name = name;
         this.regNo = regNo;
@@ -19,6 +19,7 @@ public class Model {
         this.branch = branch;
         this.size = size;
         this.amtPaid = amtPaid;
+
     }
 
     public String getFxn() {
@@ -37,27 +38,27 @@ public class Model {
         this.name = name;
     }
 
-    public int getRegNo() {
+    public String getRegNo() {
         return regNo;
     }
 
-    public void setRegNo(int regNo) {
+    public void setRegNo(String regNo) {
         this.regNo = regNo;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
@@ -77,11 +78,11 @@ public class Model {
         this.size = size;
     }
 
-    public int getAmtPaid() {
+    public String getAmtPaid() {
         return amtPaid;
     }
 
-    public void setAmtPaid(int amtPaid) {
+    public void setAmtPaid(String amtPaid) {
         this.amtPaid = amtPaid;
     }
 }
