@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         EntryAPI entryAPI=retrofit.create(EntryAPI.class);
-        Model model=new Model("add",name,regNo,phone,year,branch,size,amtPaid);
         Call<Model> call=entryAPI.createPost("add",name,regNo,phone,year,branch,size,amtPaid);
         call.enqueue(new Callback<Model>() {
             @Override
