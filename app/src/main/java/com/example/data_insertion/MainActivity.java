@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<Model> call, Throwable t) {
                 Toast.makeText(MainActivity.this,t.getMessage(), Toast.LENGTH_LONG).show();
-                System.out.println(t.getMessage());
             }
         });
     }
