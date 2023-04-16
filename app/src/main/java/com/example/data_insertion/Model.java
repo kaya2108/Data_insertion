@@ -2,6 +2,7 @@ package com.example.data_insertion;
 
 public class Model {
     private String fxn;
+    private String uniqueID;
     private String name;
     private String regNo;
     private String phone;
@@ -9,8 +10,11 @@ public class Model {
     private String branch;
     private String size;
     private String amtPaid;
+    private String comments;
+    private String user;
+    private String email;
 
-    public Model(String fxn, String name, String regNo, String phone, String year, String branch, String size, String amtPaid) {
+    public Model(String fxn, String uniqueID,String name, String regNo, String phone, String year, String branch, String size, String amtPaid,String comments,String user,String email) {
         this.fxn = fxn;
         this.name = name;
         this.regNo = regNo;
@@ -19,11 +23,39 @@ public class Model {
         this.branch = branch;
         this.size = size;
         this.amtPaid = amtPaid;
+        this.comments = comments;
+        this.uniqueID=uniqueID;
+        this.user=user;
+        this.email=email;
 
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getFxn() {
         return fxn;
+    }
+
+    public String getUniqueID() {
+        return uniqueID;
+    }
+
+    public void setUniqueID(String uniqueID) {
+        this.uniqueID = uniqueID;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
     }
 
     public void setFxn(String fxn) {
@@ -84,5 +116,13 @@ public class Model {
 
     public void setAmtPaid(String amtPaid) {
         this.amtPaid = amtPaid;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 }
